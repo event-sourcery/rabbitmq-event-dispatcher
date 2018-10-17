@@ -1,0 +1,37 @@
+{
+  "name": "event-sourcery/rabbitmq-event-dispatcher",
+  "description": "RabbitMQ event dispatch system.",
+  "keywords": [
+    "event dispatch",
+    "rabbitmq",
+    "event sourcery"
+  ],
+  "authors": [
+    {
+      "name": "Shawn McCool",
+      "email": "shawn@heybigname.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "event-sourcery/event-sourcery": "^5"
+  },
+  "autoload": {
+    "psr-4": {
+      "EventSourcery\\RabbitMqEventDispatcher\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "spec\\EventSourcery\\RabbitMqEventDispatcher\\": "spec/"
+    },
+    "files": [
+      "spec/functions.php"
+    ]
+  },
+  "config": {
+    "sort-packages": true,
+    "bin-dir": "bin"
+  },
+  "minimum-stability": "dev"
+}
